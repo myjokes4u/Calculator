@@ -1,0 +1,115 @@
+/*@import url('http://fonts.cdnfonts.com/css/digital-7-mono');*/
+@font-face { 
+    font-family: 'Digital-7 Italic'; 
+    font-style: normal; 
+    font-weight: 400; 
+    src: local('Digital-7 Italic'), url('https://fonts.cdnfonts.com/s/17796/digital-7 (italic).woff') 
+    format('woff'); 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    justify-content: center;
+    min-height: 100vh;
+}
+.main{
+    background: gray;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.Calculator{
+    margin: 0.5vh;
+    padding: 1vh;
+    background-color: darkgray;
+}
+.header{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.brand a{
+      color: blue;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+}
+.model p{
+    font-size: small;
+    color: #392e75;
+}
+.screen{
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+    border-radius: 5px;
+    border: 5px inset lightgray;
+}
+.display{
+    padding: 1px;
+    height: 40px;
+    background-color: #A2AE77;
+    border: #666966 solid 1px;
+}
+#operation{
+    color: rgb(44, 44, 44);
+    padding: 1px;
+    height: 15px;
+    font-weight: bold;
+    display: grid;
+    justify-items: end;
+    align-content: space-around;
+}
+#result{
+    padding: 2px;
+    font-size: x-large;
+    font-weight: bold;
+    display: grid;
+    justify-items: end;
+    align-content: space-around;
+    font-family: 'Digital-7 Italic', sans-serif;
+}
+.keys{
+    margin-top: 5px;
+    /*padding: 1px;*/
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    font-weight: 800;
+    font-size: xx-large;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px outset lightgray;
+}
+.opr{
+    color: rgb(187, 187, 187);
+    font-weight: bold;
+    font-size: x-large;
+}
+#ac{
+    color: white;
+    background-color: red;
+    font-weight: 600;
+}
+#c{
+    color: red;
+    background-color: black;
+    font-weight: 600;
+}
+.cpr{
+    text-align: center;
+    margin: 3px;
+}

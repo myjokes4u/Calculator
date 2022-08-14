@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="images/Calculator.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="Calculator">
+            <div class="header">
+              <div class="brand">
+                <a href="/">NM Creation</a>
+              </div>
+              <div class="model">
+                <p>Clasic</p>
+              </div>
+            </div>
+            <div class="screen">
+                <div class="display">
+                    <p id="operation"></p>
+                    <p id="result">0</p>
+                </div>
+            </div>
+            <div class="keys">
+                <div class="row">
+                    <button class="btn opr" id="ac" onclick="ac()">AC</button>
+                    <button class="btn opr" id="c" onclick="back()">C</button>
+                    <button class="btn opr" id="pers" onclick="oprbtn('%')">%</button>
+                    <button class="btn opr" id="div" onclick="oprbtn('/')">÷</button>
+                </div>
+                <div class="row">
+                    <button class="btn num" id="seven" onclick="btn(7)">7</button>
+                    <button class="btn num" id="eight" onclick="btn(8)">8</button>
+                    <button class="btn num" id="nine" onclick="btn(9)">9</button>
+                    <button class="btn opr" id="mul" onclick="oprbtn('*')">x</button>
+                </div>
+                <div class="row">
+                    <button class="btn num" id="four" onclick="btn(4)">4</button>
+                    <button class="btn num" id="five" onclick="btn(5)">5</button>
+                    <button class="btn num" id="six" onclick="btn(6)">6</button>
+                    <button class="btn opr" id="minus" onclick="oprbtn('-')">-</button>
+                </div>
+                <div class="row">
+                    <button class="btn num" id="one" onclick="btn(1)">1</button>
+                    <button class="btn num" id="two" onclick="btn(2)">2</button>
+                    <button class="btn num" id="three" onclick="btn(3)">3</button>
+                    <button class="btn opr" id="plus" onclick="oprbtn('+')">+</button>
+                </div>
+                <div class="row">
+                    <button class="btn opr" id="pm" onclick="pmbtn()">+/-</button>
+                    <button class="btn num" id="zeero" onclick="btn(0)">0</button>
+                    <button class="btn opr" id="dot" onclick="dotbtn()">.</button>
+                    <button class="btn opr" id="equal" onclick="oprbtn('=')">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cpr">
+        <p><a href="tel:+966553784381">+966553784381</a>
+        <br/>
+        <a href="http://wa.me/919809715315?text=Hai%20Abdul%20Azeez" target="_blank">+919809715315</a>
+        <br/>
+        <script>document.write(location.hostname);</script>
+        <br/>©2oo9-<script>document.write(new Date().getFullYear());</script>®<br/>MYjokes4U Designing™</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
